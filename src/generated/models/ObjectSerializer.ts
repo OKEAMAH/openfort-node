@@ -16,6 +16,7 @@ export * from '../models/AccountPolicyRuleResponse';
 export * from '../models/AccountResponse';
 export * from '../models/AccountResponseExpandable';
 export * from '../models/Amount';
+export * from '../models/ApiAuthorizedNetworkDeleteResponse';
 export * from '../models/ApiAuthorizedNetworkListResponse';
 export * from '../models/ApiAuthorizedNetworkResponse';
 export * from '../models/ApiKeyResponse';
@@ -91,6 +92,7 @@ export * from '../models/DeveloperAccountResponse';
 export * from '../models/DeveloperAccountResponseExpandable';
 export * from '../models/DeviceListQueries';
 export * from '../models/DeviceResponse';
+export * from '../models/DiscordOAuthConfig';
 export * from '../models/DomainData';
 export * from '../models/EmailSampleDeleteResponse';
 export * from '../models/EmailSampleResponse';
@@ -120,6 +122,7 @@ export * from '../models/EntityTypeTRIGGER';
 export * from '../models/EntityTypeUSER';
 export * from '../models/EntityTypeWEB3ACTION';
 export * from '../models/EntityTypeWEB3CONNECTION';
+export * from '../models/EpicGamesOAuthConfig';
 export * from '../models/ErrorTypeINVALIDREQUESTERROR';
 export * from '../models/EstimateTransactionIntentGasResult';
 export * from '../models/EventDeleteResponse';
@@ -160,7 +163,10 @@ export * from '../models/OAuthConfig';
 export * from '../models/OAuthConfigListResponse';
 export * from '../models/OAuthInitRequest';
 export * from '../models/OAuthInitRequestOptions';
+export * from '../models/OAuthProvders';
 export * from '../models/OAuthProvider';
+export * from '../models/OAuthProviderDISCORD';
+export * from '../models/OAuthProviderEPICGAMES';
 export * from '../models/OAuthProviderFACEBOOK';
 export * from '../models/OAuthProviderGOOGLE';
 export * from '../models/OAuthProviderTWITTER';
@@ -330,8 +336,9 @@ import { AccountPolicyRuleResponse     } from '../models/AccountPolicyRuleRespon
 import { AccountResponse              } from '../models/AccountResponse';
 import { AccountResponseExpandable } from '../models/AccountResponseExpandable';
 import { Amount } from '../models/Amount';
+import { ApiAuthorizedNetworkDeleteResponse    } from '../models/ApiAuthorizedNetworkDeleteResponse';
 import { ApiAuthorizedNetworkListResponse       } from '../models/ApiAuthorizedNetworkListResponse';
-import { ApiAuthorizedNetworkResponse } from '../models/ApiAuthorizedNetworkResponse';
+import { ApiAuthorizedNetworkResponse      } from '../models/ApiAuthorizedNetworkResponse';
 import { ApiKeyResponse } from '../models/ApiKeyResponse';
 import { ApiKeyType } from '../models/ApiKeyType';
 import { AssetInventory      } from '../models/AssetInventory';
@@ -405,6 +412,7 @@ import { DeveloperAccountResponse        } from '../models/DeveloperAccountRespo
 import { DeveloperAccountResponseExpandable } from '../models/DeveloperAccountResponseExpandable';
 import { DeviceListQueries     } from '../models/DeviceListQueries';
 import { DeviceResponse       } from '../models/DeviceResponse';
+import { DiscordOAuthConfig     } from '../models/DiscordOAuthConfig';
 import { DomainData } from '../models/DomainData';
 import { EmailSampleDeleteResponse    } from '../models/EmailSampleDeleteResponse';
 import { EmailSampleResponse        } from '../models/EmailSampleResponse';
@@ -434,6 +442,7 @@ import { EntityTypeTRIGGER } from '../models/EntityTypeTRIGGER';
 import { EntityTypeUSER } from '../models/EntityTypeUSER';
 import { EntityTypeWEB3ACTION } from '../models/EntityTypeWEB3ACTION';
 import { EntityTypeWEB3CONNECTION } from '../models/EntityTypeWEB3CONNECTION';
+import { EpicGamesOAuthConfig     } from '../models/EpicGamesOAuthConfig';
 import { ErrorTypeINVALIDREQUESTERROR } from '../models/ErrorTypeINVALIDREQUESTERROR';
 import { EstimateTransactionIntentGasResult } from '../models/EstimateTransactionIntentGasResult';
 import { EventDeleteResponse    } from '../models/EventDeleteResponse';
@@ -474,7 +483,10 @@ import { OAuthConfig               } from '../models/OAuthConfig';
 import { OAuthConfigListResponse } from '../models/OAuthConfigListResponse';
 import { OAuthInitRequest    } from '../models/OAuthInitRequest';
 import { OAuthInitRequestOptions } from '../models/OAuthInitRequestOptions';
+import { OAuthProvders } from '../models/OAuthProvders';
 import { OAuthProvider } from '../models/OAuthProvider';
+import { OAuthProviderDISCORD } from '../models/OAuthProviderDISCORD';
+import { OAuthProviderEPICGAMES } from '../models/OAuthProviderEPICGAMES';
 import { OAuthProviderFACEBOOK } from '../models/OAuthProviderFACEBOOK';
 import { OAuthProviderGOOGLE } from '../models/OAuthProviderGOOGLE';
 import { OAuthProviderTWITTER } from '../models/OAuthProviderTWITTER';
@@ -687,7 +699,10 @@ let enumsMap: Set<string> = new Set<string>([
     "EntityTypeWEB3CONNECTION",
     "ErrorTypeINVALIDREQUESTERROR",
     "NextActionType",
+    "OAuthProvders",
     "OAuthProvider",
+    "OAuthProviderDISCORD",
+    "OAuthProviderEPICGAMES",
     "OAuthProviderFACEBOOK",
     "OAuthProviderGOOGLE",
     "OAuthProviderTWITTER",
@@ -744,6 +759,7 @@ let typeMap: {[index: string]: any} = {
     "AccountPolicyRuleResponse": AccountPolicyRuleResponse,
     "AccountResponse": AccountResponse,
     "Amount": Amount,
+    "ApiAuthorizedNetworkDeleteResponse": ApiAuthorizedNetworkDeleteResponse,
     "ApiAuthorizedNetworkListResponse": ApiAuthorizedNetworkListResponse,
     "ApiAuthorizedNetworkResponse": ApiAuthorizedNetworkResponse,
     "ApiKeyResponse": ApiKeyResponse,
@@ -813,10 +829,12 @@ let typeMap: {[index: string]: any} = {
     "DeveloperAccountResponse": DeveloperAccountResponse,
     "DeviceListQueries": DeviceListQueries,
     "DeviceResponse": DeviceResponse,
+    "DiscordOAuthConfig": DiscordOAuthConfig,
     "DomainData": DomainData,
     "EmailSampleDeleteResponse": EmailSampleDeleteResponse,
     "EmailSampleResponse": EmailSampleResponse,
     "EntityIdResponse": EntityIdResponse,
+    "EpicGamesOAuthConfig": EpicGamesOAuthConfig,
     "EstimateTransactionIntentGasResult": EstimateTransactionIntentGasResult,
     "EventDeleteResponse": EventDeleteResponse,
     "EventListQueries": EventListQueries,
